@@ -1,0 +1,31 @@
+#toast {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+}
+
+.toast {
+    background: #4CAF50;
+    color: #fff;
+    padding: 12px 20px;
+    margin-top: 10px;
+    border-radius: 6px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+    opacity: 0.95;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+.toast.error {
+    background: #f44336;
+}
+
+@keyframes fadein {
+    from {opacity: 0; transform: translateY(-20px);}
+    to {opacity: 0.95; transform: translateY(0);}
+}
+
+@keyframes fadeout {
+    from {opacity: 0.95;}
+    to {opacity: 0; transform: translateY(-20px);}
+}

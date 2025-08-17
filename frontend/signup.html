@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup - Expense Tracker</title>
+    <link rel="stylesheet" href="style_auth.css">
+    <link rel="stylesheet" href="toast.css">
+</head>
+<body>
+    <div class="auth-container">
+        <h1>Expense Tracker - Signup</h1>
+        <input type="text" id="username" placeholder="Username">
+        <input type="email" id="email" placeholder="Email">
+        <input type="password" id="password" placeholder="Password">
+        <button onclick="register()">Register</button>
+        <p>Already have an account? <a href="login.html">Login</a></p>
+    </div>
+
+    <div id="toast"></div>
+
+    <script src="toast.js"></script>
+    <script src="auth.js"></script>
+</body>
+</html>
